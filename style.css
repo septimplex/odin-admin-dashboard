@@ -22,15 +22,22 @@ a{
     grid-template-columns: 0.5fr 2fr;
     font-size: 15px;
     align-items: center;
-    margin-right: 1em;
+    margin-left: 10px;
 
 }
 
 img{
-    border: black solid 2px;
-    padding: 20px;
-    margin: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px gray solid;  
 
+}
+
+#logo img{
+    height: 60px;
+    width: 60px;
+    border: none;
 }
 
 .side-nav ul li{
@@ -147,7 +154,7 @@ img{
 
 
 #main-content{
-    background-color: lightblue;
+    background-color: lightgrey;
     display: grid;
     grid-template-columns: 2.5fr 1fr;
 }
@@ -265,6 +272,7 @@ hr{
 .trending-content{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    gap:10px;
     align-items: center;
     justify-content: center;
 }
