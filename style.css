@@ -55,7 +55,7 @@ img{
     grid-template: 80px 120px /2fr 1.5fr;
     margin-left: 20px;
     margin-right:20px;
-    font-size: 18px;    
+    font-size: 18px;
 
 }
 
@@ -136,4 +136,5 @@ img{
 
 #main-content{
     background-color: lightblue;
+    
 }
