@@ -6,6 +6,13 @@ body{
     
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Nav Side Bar*/
+
 #side-bar{
     background-color: pink;
 }
@@ -15,6 +22,7 @@ body{
     grid-template-columns: 0.5fr 2fr;
     font-size: 15px;
     align-items: center;
+    margin-right: 1em;
 
 }
 
@@ -45,6 +53,8 @@ img{
     margin-right: 1em;
 }
 
+/*Main*/
+
 #main{
     display: grid;
     grid-template-rows: 200px auto;
@@ -56,8 +66,9 @@ img{
     margin-left: 20px;
     margin-right:20px;
     font-size: 18px;
-
+    
 }
+
 
 #search-bar{
     grid-area: 1 1 2 2;
@@ -113,7 +124,8 @@ img{
 
 #user-nav button{
     height: 40px;
-    width: 100px;
+    max-width: 100px;
+    min-width: 60px;
     border-radius: 30px;
     background-color: pink;
     font-weight: bold;
@@ -136,5 +148,137 @@ img{
 
 #main-content{
     background-color: lightblue;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+}
+
+.main-title{
+    margin-left: 10px;
+}
+
+/*Project*/
+
+#projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    margin: 10px;
     
+}
+
+.project{
+    height: 250px;
+    min-width:250px;
+    max-width:300px;
+    padding: 10px;
+    border-left: 7px solid orange;
+    box-shadow: 3px 4px 3px 0px rgba(197, 197, 197, 0.75);
+    border-radius: 4%;
+    display: grid;
+    grid-template-rows: 30px minmax(30px, 100px) auto;
+    background-color: white;
+    gap:2px;
+}
+
+.project-icons{
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+    justify-content: end;
+    align-items: end;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+}
+
+.project:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+
+
+.project h3{
+    font-size: 18px;
+    
+}
+
+.project p{
+    width: 95%;
+    font-size: 16px;
+    color: grey;
+
+}
+
+/*Main Side Content*/
+#main-side{
+    grid-column-start: 2;
+    
+}
+
+#announcement-container{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    box-shadow: 3px 4px 3px 0px rgba(197, 197, 197, 0.75);
+    border-radius: 4%;
+    font-size: 13px;
+    gap: 10px;
+}
+
+.an-title,
+.an-text{
+    padding: 0;
+    margin:0;
+}
+
+.an-text{
+    color: gray;
+}
+
+hr{
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:gray;
+    height: 1px;
+}
+
+#trending{
+    margin-top:40px;
+}
+
+#trending-container{
+    display:grid;
+    grid-template-columns: repeat(1fr,4);
+    background-color: white;
+    box-shadow: 3px 4px 3px 0px rgba(197, 197, 197, 0.75);
+    border-radius: 4%;
+    font-size: 13px;
+    gap: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.trending-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.trending-user-info p{
+    padding:0;
+    margin:0;
+    font-size: 14px;
+}
+
+.trending-user{
+    font-weight: bold;
+}
+
+.trending-project-name{
+    color:gray;
 }
