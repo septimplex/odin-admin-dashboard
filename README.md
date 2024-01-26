@@ -14,3 +14,7 @@ Pictures from:
 
 5.https://www.flaticon.com/free-icon/cube_1194243?term=square&related_id=1194243
 
+Live preview:
+
+https://septimplex.github.io/odin-admin-dashboard/
+
