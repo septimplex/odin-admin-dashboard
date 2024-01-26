@@ -2,6 +2,7 @@ body{
     display: grid;
     grid-template-columns: 0.8fr 3fr;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
     
     
 }
@@ -14,7 +15,7 @@ a{
 /*Nav Side Bar*/
 
 #side-bar{
-    background-color: pink;
+    background-color:#bae6fd;
 }
 
 #logo{
@@ -23,6 +24,7 @@ a{
     font-size: 15px;
     align-items: center;
     margin-left: 10px;
+    margin-right:10px;
 
 }
 
@@ -30,7 +32,7 @@ img{
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    border: 1px gray solid;  
+    border: 2px black solid;  
 
 }
 
@@ -46,7 +48,7 @@ img{
 
 .side-btn{
     font-size: 18px; 
-    background:pink;
+    background-color:#bae6fd;
     border: none; 
     padding-bottom: 20px; 
     font-weight: bold;
@@ -65,15 +67,18 @@ img{
 #main{
     display: grid;
     grid-template-rows: 200px auto;
+    
 }
 
 #header{
     display: grid;
     grid-template: 80px 120px /2fr 1.5fr;
-    margin-left: 20px;
-    margin-right:20px;
+    padding-left:20px;
+    padding-right:20px;
     font-size: 18px;
-    
+    background-color: white;
+    border-bottom: solid 1px gray;
+     
 }
 
 
@@ -83,18 +88,18 @@ img{
     height: 100%;
     padding-top: 30px;
     margin-left: 30px;
+    
 }
 
 #user-logo{
-    justify-self: center;
     width: 50%;
-    margin-left: 30px;
+    margin-left:90px;
     grid-area: 1 2 2 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-
+    gap:15px;
 }
 
 #user-logo h3{
@@ -108,6 +113,7 @@ img{
     grid-template: 1fr / 1fr 5fr;
     align-items: center;
     margin-left: 30px;
+    gap:15px;
     
 }
 #user-info h5{
@@ -130,16 +136,17 @@ img{
 }
 
 #user-nav button{
-    height: 40px;
+    height: 44px;
     max-width: 100px;
-    min-width: 60px;
+    min-width: 62px;
     border-radius: 30px;
-    background-color: pink;
+    background-color: #bae6fd;
     font-weight: bold;
 }
 
 #user-nav button:hover{
     cursor: pointer;
+    transform: scale(1.02);
 }
 
 #search-bar input{
@@ -148,13 +155,15 @@ img{
     height: 20px;
     width:  80%;
     margin-left: 8px;
-    background-color: lightgrey;
+    background-color: #e4e4e7;
+    
 }
 
 
 
+
 #main-content{
-    background-color: lightgrey;
+    background-color: #e4e4e7;
     display: grid;
     grid-template-columns: 2.5fr 1fr;
 }
@@ -178,7 +187,7 @@ img{
     min-width:250px;
     max-width:300px;
     padding: 10px;
-    border-left: 7px solid orange;
+    border-left: 7px solid #22d3ee;
     box-shadow: 3px 4px 3px 0px rgba(197, 197, 197, 0.75);
     border-radius: 4%;
     display: grid;
@@ -290,3 +299,5 @@ hr{
 .trending-project-name{
     color:gray;
 }
+
+
