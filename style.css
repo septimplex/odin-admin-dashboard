@@ -1,0 +1,139 @@
+body{
+    display: grid;
+    grid-template-columns: 0.8fr 3fr;
+    margin: 0;
+    
+    
+}
+
+#side-bar{
+    background-color: pink;
+}
+
+#logo{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    font-size: 15px;
+    align-items: center;
+
+}
+
+img{
+    border: black solid 2px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.side-nav ul li{
+    list-style-type: none;
+}
+
+.side-btn{
+    font-size: 18px; 
+    background:pink;
+    border: none; 
+    padding-bottom: 20px; 
+    font-weight: bold;
+}
+
+.side-btn:hover{
+    cursor: pointer;
+}
+
+.side-btn i{
+    margin-right: 1em;
+}
+
+#main{
+    display: grid;
+    grid-template-rows: 200px auto;
+}
+
+#header{
+    display: grid;
+    grid-template: 80px 120px /2fr 1.5fr;
+    margin-left: 20px;
+    margin-right:20px;
+    font-size: 18px;    
+
+}
+
+#search-bar{
+    grid-area: 1 1 2 2;
+    font-size: 18px;
+    height: 100%;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+
+#user-logo{
+    justify-self: center;
+    width: 50%;
+    margin-left: 30px;
+    grid-area: 1 2 2 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+
+}
+
+#user-logo h3{
+    margin-left: 12px;
+}
+
+#user{
+    height: 100%;
+    grid-area: 2 1 3 2;
+    display: grid;
+    grid-template: 1fr / 1fr 5fr;
+    align-items: center;
+    margin-left: 30px;
+    
+}
+#user-info h5{
+    margin-bottom: 0;
+}
+
+#user-info h3{
+    margin-top: 0;
+}
+
+
+#user-nav{
+    height: 100%;
+    grid-area: 2 2 3 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+
+}
+
+#user-nav button{
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    background-color: pink;
+    font-weight: bold;
+}
+
+#user-nav button:hover{
+    cursor: pointer;
+}
+
+#search-bar input{
+    border-radius: 30px;
+    font-size: 18px;
+    height: 20px;
+    width:  80%;
+    margin-left: 8px;
+    background-color: lightgrey;
+}
+
+
+
+#main-content{
+    background-color: lightblue;
+}
